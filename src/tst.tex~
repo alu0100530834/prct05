@@ -1,0 +1,134 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Presentación con Beamer]{Introduccion al \LaTeX{} }
+\author[L. Diaz]{Lorena Díaz Morales}
+\date[15-03-2013]{15 de marzo de 2013}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+%\usetheme{Antibes}
+%\usetheme{boxes}
+%\usetheme{tree}
+%\usetheme{classic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+  \includegraphics[width=0.15\textwidth]{img/ullesc.eps}
+  \hspace*{7.5cm}
+  \includegraphics[width=0.16\textwidth]{img/fmatesc.eps}
+  \titlepage
+
+  \begin{scriptsize}
+    \begin{center}
+     Facultad de Matemáticas \\
+     Universidad de La Laguna
+    \end{center}
+  \end{scriptsize}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\begin{frame}
+  \frametitle{Índice}  
+  \tableofcontents[pausesections]
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Primera Sección}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{¿Que es \LaTeX{}?}
+
+\begin{definicion}
+\LaTeX{} es un sistema de composicion de textos, orientado especialmente a la creación de libros,documentos científicos y técnicos que 
+contengan fórmulas matemáticas.
+
+\end{definicion}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\begin{frame}
+
+\frametitle{Formulas matematicas}
+
+\begin{block}{Ejemplo}
+  \begin{itemize}
+  \item
+  $3x+4x-3x^3=0$ 
+  \pause
+
+  \item
+  $\int sen(x) dx$
+  \pause
+
+  \item
+  $\int\int_D x^2$
+
+  \end{itemize}
+\end{block}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{¿Por que utilizar \LaTeX{}?}
+\begin{frame}
+\begin{itemize}
+\frametitle{Beamer}
+Latex es ampliamente utilizado en entornos cientificos. Muchas revistas aceptan documentos escritos en \Latex
+Excelente calidad del documento final con salida en distintos formatos:DVI,PDF,...
+Los ficheros fuente .tex son ficheros ASCII y pueden ser compilados en cualquier sistema operativo
+Es gratuito.
+Muy potente
+\end{itemize}
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[Plan Estudios, 2011]{plan}  
+    Documento de verificación del grado. 
+    (2011) 
+
+    \beamertemplatebookbibitems
+    \bibitem[Guía Docente, 2013]{guia}  
+    Guía docente. 
+    (2013) 
+    {\small $http://eguia.ull.es/matematicas/query.php?codigo=299341201$}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]{latex} 
+    CTAN. {\small $http://www.ctan.org/$}
+
+  \end{thebibliography}
+  
+\end{frame}
+
+\end{document}
+
+
+
+
+
+
+
+
+

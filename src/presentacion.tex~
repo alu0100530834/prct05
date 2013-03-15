@@ -1,0 +1,164 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[presentacion]{Introduccion al \Latex}
+\author[L. Diaz]{Lorena Díaz Morales}
+\date[15-03-2013]{15 de marzo de 2013}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+%\usetheme{Antibes}
+%\usetheme{boxes}
+%\usetheme{tree}
+%\usetheme{classic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+  \includegraphics[width=0.15\textwidth]{img/ullesc.eps}
+  \hspace*{7.5cm}
+  \includegraphics[width=0.16\textwidth]{img/fmatesc.eps}
+  \titlepage
+
+  \begin{scriptsize}
+    \begin{center}
+     Facultad de Matemáticas \\
+     Universidad de La Laguna
+    \end{center}
+  \end{scriptsize}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Índice}  
+  \tableofcontents[pausesections]
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Primera Sección}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{¿Que es \LaTeX{}?}
+
+\begin{definicion}
+\Latex es un sistema de composicion de textos, orientado especialmente a la creación de libros,documentos científicos y técnicos que 
+contengan fórmulas matemáticas como por ejemplo 
+\[ x+y^{3t+7}=\sqrt{(b^2-4ac)/2a} \] \[ S_n=\sum_{i=1} a_i \]
+
+\end{definicion}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Formulas matamaticas}
+
+\begin{block}{Ejemplo}
+  \begin{itemize}
+  \item
+  $3x+4x-3x^3=0$ 
+  \pause
+
+  \item
+  $\int sen(x) dx$
+  \pause
+
+  \item
+  $\int\int_D x^2$
+  
+
+  \end{itemize}
+\end{block}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{¿Por que utilizar Latex{}?}
+\begin{frame}
+\begin{itemize}
+\item
+PROS
+Latex es ampliamente utilizado en entornos cientificos. Muchas revistas aceptan documentos escritos en \Latex
+\pause
+
+\item
+Excelente calidad del documento final con salida en distintos formatos:DVI,PDF,...
+\pause
+
+\item
+Los ficheros fuente .tex son ficheros ASCII y pueden ser compilados en cualquier sistema operativo
+
+\pause
+
+\item
+Es gratuito.
+\pause
+
+\item
+Muy potente.
+\pause
+
+CONTRAS
+
+\item
+No es un procesador del tipo WYSIWYG "lo que escribes es lo que consigues", por lo que es necesario un procesador de compilación(con posibles errores...)
+\pause
+\end{itemize}
+\end{frame}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Personalizando los nombres de caption y bibliografia}
+
+Podemos cambiar los nombres y la numeración de las caption en los entornos de figuras y tablas. una forma sencilla es utilizar el paquete caption.
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]ĺatex}
+    {\small $http://www.pcmap.unizar.es/~pilar/latex.pdf$}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]{latex} 
+    CTAN. {\small $http://es.wikipedia.org/wiki/latex$}
+
+  \end{thebibliography}
+\end{frame}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\end{document}
+
+
+
+
+
+
+
+
+
