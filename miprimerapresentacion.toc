@@ -1,4 +1,0 @@
-\beamer@endinputifotherversion {3.10pt}
-\select@language {spanish}
-\beamer@sectionintoc {1}{Introducci\~A{^3}n}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Compilar}{3}{0}{1}
